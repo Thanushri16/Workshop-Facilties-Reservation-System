@@ -1,0 +1,3 @@
+fastapi[all]
+fastapi_versioning
+pytest
