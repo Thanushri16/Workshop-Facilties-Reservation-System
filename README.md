@@ -1,24 +1,23 @@
-# MPCS 51220 Homework G-01
+# Workshop Facilities Reservation System
 
-## Team: 404 Team Not Found
 **Updated**: 28 April 2022<br>
 **Version**: v1_0
 
-# Team Members and Work Delegation
-The whole team worked in smaller groups with seperate responsibilities, as follows: <br>
-**Back End**<br>
-Hanze Hu, hanzeh@uchicago.edu <br>
-Yusen Zhang, yusen@uchicago.edu
-
-**Front End**<br>
-Prajval Mohan, prajvalmohan@uchicago.edu<br>
-Thanushri Rajmohan, thanushrir@uchicago.edu
-
-**Testing**<br>
-Hayder Saad, haydersaad@uchicago.edu
-
 # Specifications
-See Specifications for this project at https://canvas.uchicago.edu/courses/42548/assignments/456278
+<br> 
+A FastAPI application that provides the functionality of the reservation system through a (pragmatic) RESTful API.
+The system pre-loads a representative set of data to streamline manual testing and demonstration.
+The system adopts a file based persistence mechanism.
+The system adopted Test Driven Development using pytest that involved testing the API endpoints.
+Scope control implementation was carried out.
+A console client allows a user to interact with the API to perform the reservation system functions.
+Basic API documentation for the system exists as well.
+<br> 
+
+# Special Requirements
+<br> 
+Streamlining the seed data handling in the system by providing reset.py. 
+Robust job implementing the server tests and the client side tests.
 
 # System Instructions
 ## Server
@@ -62,18 +61,8 @@ pytest
 - All commits should have a clear, relevant description of what was implemented in that commit
 - Once a feature has been completed, and there's no remaining conflict, the branch should be merged onto _dev_ by the author of the branch
 
-# E grade requirement
-1. Implemented all requirements from A-01 including all special requirements.
-2. Implemented persistence mechanism in such a way as to not generate loss of work, change is made to the data file as soon as requests are received on the API endpoints.
-3. The UI is very user friendly and We limited the number of results demonstrated so as to avoid overwhelming users.
-4. Besides basic tests to show that our API works, we also test error handling ability of our server.
-5. No apparent code smell.
-6. We follow coding style guide totally.
-7. We streamline the seed data handling by providing reset.py
-
-
 # Jira Usage Discussion
-A system like JIRA could help organize the group's work in a few meaningful ways:
-1. Jira could be used to delegate not just work but also responsibility. For example, each new feature could be assigned to one group member and they will be responsible for making sure it is implemented correctly and in a timely manner.
+A system like JIRA could help organize the work in a few meaningful ways:
+1. Jira could be used to delegate not just work but also responsibility. For example, each new feature could be assigned to a member and they will be responsible for making sure it is implemented correctly and in a timely manner.
 2. Jira could be used to approximate how long the project will take. Since most/all of the features that are required to be implemented could be given an approximate time, it could give the group a better sense of the overall project and ensure that the project is on track to finish on time.
-3. Jira could be used to track priorities of different features. This was especially important because we noticed that in our case, the implementation of the client end is somewhat dependent on the implemntation of the server, since the API endpoints and formats must be confirmed before the client side could implement it. Using Jira could set dependencies and we can better manage the group's time (e.g. making sure the server is completed by Wednesday so the front end group could finish by Friday), and these timelines would be easily tracked using Jira.
+3. Jira could be used to track priorities of different features. This was especially important because in the case of this project, the implementation of the client end is somewhat dependent on the implementation of the server, since the API endpoints and formats must be confirmed before the client side could implement it. Using Jira could set dependencies and we can better manage the group's time (e.g. making sure the server is completed by Wednesday so the front end group could finish by Friday), and these timelines would be easily tracked using Jira.
